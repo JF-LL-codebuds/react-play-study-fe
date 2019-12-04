@@ -6,3 +6,29 @@
   margin: 1em;
   display: flex;
 }
+
+.goals1 {
+  background-color: lightgray;
+  color: dimgray;
+  max-width: 30vw;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+}
+
+.goals2 {
+  background-color: wheat;
+  color: darkgoldenrod;
+  max-width: 30vw;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+}
+.goals3 {
+  background-color: lavender;
+  color: mediumpurple;
+  max-width: 30vw;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+}
