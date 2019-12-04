@@ -1,0 +1,8 @@
+.goals {
+  background-color: wheat;
+  color: darkgoldenrod;
+  max-width: 30vw;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+}
