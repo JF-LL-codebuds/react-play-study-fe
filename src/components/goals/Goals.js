@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './goals.css';
 import PropTypes from 'prop-types';
 
 function Goals({ sectionStyle }) {
