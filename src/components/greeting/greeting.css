@@ -1,4 +1,8 @@
 .greeting {
   background-color: tomato;
   color: purple;
+  padding: 0.5%;
+  border-radius: 8px;
+  max-width: 100%;
+  text-align: center;
 }
