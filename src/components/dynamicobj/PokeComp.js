@@ -1,0 +1,30 @@
+import React from 'react';
+import styles from './pokecomp.css';
+import PropTypes from 'prop-types';
+
+let test0 =   {
+  _id: '000001',
+  name: 'short bread',
+  pokemon: 'snorlax',
+  type: ['normal'],
+  image: 'none',
+};
+
+function PokeComp({ pokemon }) {
+
+  return (
+    <section className={styles.pokecomp}>
+      <h2>{pokemon.name === '' ? pokemon.pokemon : pokemon.name}</h2>
+      <p>Kind: {pokemon.pokemon}</p>
+      <p>Type: {pokemon.type.toString()}</p>
+      {pokemon.image === 'none' ? <p>no image</p> : <img src={pokemon.image}></img>}
+    </section>
+  );
+}
+
+PokeComp.propTypes = {
+  pokemon: PropTypes.object
+};
+
+export default PokeComp;
+
