@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './goals.css';
+import PropTypes from 'prop-types';
 
-function Goals() {
+function Goals({ sectionStyle }) {
+
   return (
-    <section className={styles.goals}>
+    <section className={sectionStyle}>
       <h2>Goals for Here</h2>
       <ul>
         <li>have user sign in</li>
@@ -16,5 +18,10 @@ function Goals() {
     </section>
   );
 }
+
+Goals.propTypes = {
+  sectionStyle: PropTypes.string
+};
+
 
 export default Goals;
