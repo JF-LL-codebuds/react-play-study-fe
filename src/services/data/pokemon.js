@@ -25,7 +25,7 @@ let pokeData = [
     name: '',
     pokemon: 'bulbasaur',
     type: ['grass'],
-    image: 'none',
+    image: 'https://upload.wikimedia.org/wikipedia/en/2/28/Pok%C3%A9mon_Bulbasaur_art.png',
   },
   {
     _id: '000005',
