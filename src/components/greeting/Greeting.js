@@ -15,9 +15,9 @@ class Greeting extends Component {
         </p>
 
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/routertest1">RouterTest1</Link>
-          <Link to="/routertest2">RouterTest2</Link>
+          <Link className={styles.link} to="/">Home</Link>
+          <Link className={styles.link} to="/routertest1">RouterTest1</Link>
+          <Link className={styles.link} to="/routertest2">RouterTest2</Link>
         </nav>
       </div>
     );
