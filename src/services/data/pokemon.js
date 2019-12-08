@@ -4,7 +4,7 @@ let pokeData = [
     name: 'short bread',
     pokemon: 'snorlax',
     type: ['normal'],
-    image: 'none',
+    image: 'https://upload.wikimedia.org/wikipedia/en/3/3f/Pok%C3%A9mon_Snorlax_art.png',
   },
   {
     _id: '000002',
@@ -18,7 +18,7 @@ let pokeData = [
     name: 'fire brains',
     pokemon: 'haunter',
     type: ['ghost'],
-    image: 'none',
+    image: 'https://vignette.wikia.nocookie.net/pokemon/images/6/62/093Haunter.png/revision/latest?cb=20140328204633',
   },
   {
     _id: '000004',
@@ -32,7 +32,7 @@ let pokeData = [
     name: 'beardy-o',
     pokemon: 'gyrados',
     type: ['water', 'dragon'],
-    image: 'none',
+    image: 'https://cdn.bulbagarden.net/upload/thumb/4/41/130Gyarados.png/500px-130Gyarados.png',
   },
 ];
 
