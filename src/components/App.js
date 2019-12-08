@@ -8,17 +8,11 @@ import Home from './home/Home';
 import RouterTest1 from './routertest/RouterTest1';
 import RouterTest2 from './routertest/RouterTest2';
 import Greeting from './greeting/Greeting';
-import Goals from './goals/Goals';
-import PokeComp from './dynamicobj/PokeComp';
 import goalStyles from './goals/goals.css';
 import styles from './app.css';
 
-import pokeData from '../services/data/pokemon';
-
 export default function App() {
-  console.log(goalStyles);
-  console.log(pokeData);
-  console.log(pokeData[0]);
+  console.log('good location 4 console.log', goalStyles);
 
   return (
     <main>
@@ -41,16 +35,3 @@ export default function App() {
     </main>
   );  
 }
-
-{/* <Goals sectionStyle={goalStyles.goals1} />
-<Goals sectionStyle={goalStyles.goals4} />
-
-<PokeComp pokemon={pokeData[1]} />
-
-<Goals sectionStyle={goalStyles.goals2} />
-<Goals sectionStyle={goalStyles.goals3} />
-
-<PokeComp pokemon={pokeData[2]} />
-<PokeComp pokemon={pokeData[0]} />
-<PokeComp pokemon={pokeData[3]} />
-<PokeComp pokemon={pokeData[4]} /> */}
