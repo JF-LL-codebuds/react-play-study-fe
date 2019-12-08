@@ -12,6 +12,7 @@ import goalStyles from './goals/goals.css';
 import styles from './app.css';
 
 export default function App() {
+  /* eslint-disable-next-line no-console */
   console.log('good location 4 console.log', goalStyles);
 
   return (
