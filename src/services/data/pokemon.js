@@ -11,7 +11,7 @@ let pokeData = [
     name: 'winder',
     pokemon: 'gloom',
     type: ['grass', 'poison'],
-    image: 'none',
+    image: 'https://vignette.wikia.nocookie.net/pokemon/images/2/2a/044Gloom.png/revision/latest?cb=20140328194044',
   },
   {
     _id: '000003',
