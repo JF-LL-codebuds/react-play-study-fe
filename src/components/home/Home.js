@@ -3,10 +3,12 @@ import Goals from '../goals/Goals';
 import PokeComp from '../dynamicobj/PokeComp';
 import goalStyles from '../goals/goals.css';
 import pokeData from '../../services/data/pokemon';
+import Unicode from '../../components/unicode/Unicode';
 
 export default function Home() {
   return (
     <>
+      <Unicode sectionStyle={goalStyles.goals3} />
       <Goals sectionStyle={goalStyles.goals1} />
       <Goals sectionStyle={goalStyles.goals4} />
 
