@@ -11,6 +11,16 @@ body {
   font-family: 'Solway', serif;
   text-align: center;
   color: crimson;
+
+  a {
+    text-decoration: none;
+    color: crimson;
+  }
+
+  a.visited {
+    text-decoration: none;
+    color: crimson;
+  }
 }
 
 .goalsSection {

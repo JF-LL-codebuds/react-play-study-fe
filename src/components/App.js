@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <main>
-      <h1 className={styles.topopage}>Time for the Learny-Learn</h1>
+      <h1 className={styles.topopage}><a href="/">Time for the Learny-Learn</a></h1>
 
 
       <Router>
