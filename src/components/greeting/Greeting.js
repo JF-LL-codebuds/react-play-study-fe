@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {
+  Link
+} from 'react-router-dom';
 import styles from './greeting.css';
 
 class Greeting extends Component {
@@ -10,6 +13,12 @@ class Greeting extends Component {
         <p>
           please bookmark this page, this will be where we try stuff I am learning
         </p>
+
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/routertest1">RouterTest1</Link>
+          <Link to="/routertest2">RouterTest2</Link>
+        </nav>
       </div>
     );
 
