@@ -2,14 +2,6 @@ import React from 'react';
 import styles from './pokecomp.css';
 import PropTypes from 'prop-types';
 
-let test0 =   {
-  _id: '000001',
-  name: 'short bread',
-  pokemon: 'snorlax',
-  type: ['normal'],
-  image: 'none',
-};
-
 function PokeComp({ pokemon }) {
 
   return (
