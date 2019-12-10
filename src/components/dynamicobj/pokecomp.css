@@ -7,8 +7,12 @@
   border-width: 3px;
   border-radius: 8px;
 
-  h2{
+  h2 {
     background-color: mediumseagreen;
     padding: 3px;
+  }
+
+  img {
+    max-width: 80vw; 
   }
 }
