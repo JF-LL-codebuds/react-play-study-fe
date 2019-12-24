@@ -1,5 +1,8 @@
 .yourStatsWindow {
   border: solid 2px crimson;
+  padding: 2em;
+  border-radius: 2em;
+  display: inline-block;
 }
 
 .yourStatsList {
