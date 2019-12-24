@@ -8,6 +8,7 @@ import Home from './home/Home';
 import RouterTest1 from './routertest/RouterTest1';
 import RouterTest2 from './routertest/RouterTest2';
 import Greeting from './greeting/Greeting';
+import GameLayout from './gamelayout/GameLayout';
 import goalStyles from './goals/goals.css';
 import styles from './app.css';
 
@@ -28,6 +29,7 @@ export default function App() {
               <Route exact path="/" component={Home} />
               <Route path="/routertest1" component={RouterTest1} />
               <Route path="/routertest2" component={RouterTest2} />
+              <Route path="/gamelayout" component={GameLayout} />
             </Switch>
           </>
         </section>

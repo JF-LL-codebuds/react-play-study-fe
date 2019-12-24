@@ -18,6 +18,7 @@ class Greeting extends Component {
           <Link className={styles.link} to="/">Home</Link>
           <Link className={styles.link} to="/routertest1">RouterTest1</Link>
           <Link className={styles.link} to="/routertest2">RouterTest2</Link>
+          <Link className={styles.link} to="/gamelayout">JRPG Mock Up</Link>
         </nav>
       </div>
     );
