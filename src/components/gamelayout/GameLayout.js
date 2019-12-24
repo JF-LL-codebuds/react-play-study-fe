@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import YourStats from './YourStats';
+import styles from './gamelayout.css';
 
 class GameLayout extends Component {
   render() {
     return (
-      <div>
-        <p>STUFF</p>
+      <div className={styles.containerStyle}>
+        <p className={styles.actionWindow}>STUFF</p>
         <div>
           <p>ACTIONS</p>
         </div>

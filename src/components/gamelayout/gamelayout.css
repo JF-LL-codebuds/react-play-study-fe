@@ -1,3 +1,11 @@
+.containerStyle {
+  margin: 1em;
+}
+
+.actionWindow {
+  background-color: black;
+}
+
 .yourStatsWindow {
   border: solid 2px crimson;
   padding: 2em;
