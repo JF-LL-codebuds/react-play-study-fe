@@ -2,11 +2,19 @@
   margin: 1em;
 }
 
+.userActions {
+  display: inline-block;
+  border: solid 2px crimson;
+  padding: 2em;
+  border-radius: 2em;
+  margin: 1em;
+}
+
 .mainScreen {
   background-color: black;
   color: aquamarine;
-  min-width: 80vw;
-  min-height: 70vh;
+  min-width: 68vw;
+  min-height: 60vh;
   padding: 3em;
 }
 
@@ -15,6 +23,7 @@
   padding: 2em;
   border-radius: 2em;
   display: inline-block;
+  margin: 1em;
 }
 
 .yourStatsList {
