@@ -2,8 +2,12 @@
   margin: 1em;
 }
 
-.actionWindow {
+.mainScreen {
   background-color: black;
+  color: aquamarine;
+  min-width: 80vw;
+  min-height: 70vh;
+  padding: 3em;
 }
 
 .yourStatsWindow {
