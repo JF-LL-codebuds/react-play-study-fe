@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Actions from './Actions';
 import MainScreen from './MainScreen';
 import YourStats from './YourStats';
 import styles from './gamelayout.css';
@@ -9,9 +10,7 @@ class GameLayout extends Component {
       <div className={styles.containerStyle}>
         <MainScreen className={styles.mainScreen}/>
         <div>
-          <p>ACTIONS</p>
-        </div>
-        <div>
+          <Actions />
           <YourStats />
         </div>
       </div>
