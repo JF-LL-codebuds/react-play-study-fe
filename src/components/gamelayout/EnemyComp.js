@@ -15,6 +15,7 @@ function EnemyComp({ enemy }) {
   const {
     name,
     hitPoints,
+    armorClass,
   } = enemy;
 
   return (
@@ -23,7 +24,8 @@ function EnemyComp({ enemy }) {
       <ul>
         <li>Name: {name}</li>
         <li>HP: {hitPoints}</li>
-        <li>Special</li>
+        <li>AC: {armorClass}</li>
+        <li>Special - Not yet implemented</li>
       </ul>
     </section>
   );
