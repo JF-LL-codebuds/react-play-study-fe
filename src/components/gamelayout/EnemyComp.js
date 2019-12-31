@@ -1,0 +1,36 @@
+import React from 'react';
+import styles from './gamelayout.css';
+import PropTypes from 'prop-types';
+
+// name: 'Goomba',
+// damage: 1,
+// strengthBonus: 0,
+// armorClass: 1,
+// armor: 0,
+// dexterity: 5,
+// hitPoints: 2,
+
+
+function EnemyComp({ enemy }) {
+  const {
+    name,
+    hitPoints,
+  } = enemy;
+
+  return (
+    <section className={styles.userActions}>
+      Temporary or maybe secret comp will change over time
+      <ul>
+        <li>Name: {name}</li>
+        <li>HP: {hitPoints}</li>
+        <li>Special</li>
+      </ul>
+    </section>
+  );
+}
+
+EnemyComp.propTypes = {
+  enemy: PropTypes.object.isRequired,
+};
+
+export default EnemyComp;

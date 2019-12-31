@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Actions from './Actions';
 import MainScreen from './MainScreen';
 import YourStats from './YourStats';
+import EnemyComp from './EnemyComp';
 import enemies from '../../services/gamedata/enemies';
 import styles from './gamelayout.css';
 
@@ -22,6 +23,7 @@ class GameLayout extends Component {
   }
 
   componentDidMount() {
+    /* eslint-disable-next-line no-console */
     console.log('hi, in line 25 gamelayout');
     this.loadEnemy();
   }
@@ -34,6 +36,7 @@ class GameLayout extends Component {
         <div>
           <Actions />
           <YourStats />
+          <EnemyComp enemy={this.state.currentEnemy}/>
         </div>
       </div>
     );
