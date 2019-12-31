@@ -10,33 +10,34 @@ import styles from './gamelayout.css';
 
 class GameLayout extends Component {
   state = {
-    currentEnemy: 'none',
+    currentEnemy: {data: 'none'},
     player: players[0],
     battlesFought: 0,
   };
 
   loadEnemy = () => {
-    if(this.state.currentEnemy === 'none') {
+    if(this.state.currentEnemy.data === 'none') {
       let randomEnemy = Math.floor(Math.random() * 3);
       /* eslint-disable-next-line no-console */
       console.log(randomEnemy);
-      return this.setState({ currentEnemy: enemies[randomEnemy] });
+      return this.setState({ currentEnemy: enemies[randomEnemy],
+        currentCombatMsg: `A ${enemies[randomEnemy].name} begins to attack you!` });
     }
   }
 
   //player actions linked from engine here
   playerTriesToHit = () => {
-    let tempReturnVal = CombatEngine.player.fight(this.state.currentEnemy.armorClass,
+    let tempReturnObj = CombatEngine.player.fight(this.state.currentEnemy.armorClass,
       this.state.player.hitBonus);
-    console.log(tempReturnVal);
+    console.log(tempReturnObj);
+    let newState = { ...this.state };
+    newState.currentEnemy.hitPoints -= tempReturnObj.damage;
+    if(newState.currentEnemy.hitPoints < 0) newState.currentEnemy.hitPoints = 0;
+    newState.currentCombatMsg = tempReturnObj.combatMsg;
+    return this.setState({ ...newState });
   }
 
-
-
-
   componentDidMount() {
-    /* eslint-disable-next-line no-console */
-    console.log('hi, in line 25 gamelayout');
     this.loadEnemy();
   }
 
@@ -44,7 +45,8 @@ class GameLayout extends Component {
   render() {
     return (
       <div className={styles.containerStyle}>
-        <MainScreen className={styles.mainScreen}/>
+        <MainScreen className={styles.mainScreen} 
+          currentCombatMsg={this.state.currentCombatMsg}/>
         <div>
           <Actions playerTriesToHit={this.playerTriesToHit}/>
           <YourStats />
