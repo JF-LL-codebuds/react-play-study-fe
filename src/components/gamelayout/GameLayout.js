@@ -10,7 +10,7 @@ import styles from './gamelayout.css';
 
 class GameLayout extends Component {
   state = {
-    currentEnemy: {data: 'none'},
+    currentEnemy: { data: 'none' },
     player: players[0],
     battlesFought: 0,
   };
