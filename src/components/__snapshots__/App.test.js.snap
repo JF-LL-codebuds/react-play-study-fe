@@ -1,7 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component renders App 1`] = `
-<h1>
-  Hello World
-</h1>
+<main>
+  <h1
+    className="topopage"
+  >
+    <a
+      href="/"
+    >
+      Time for the Learny-Learn
+    </a>
+  </h1>
+  <BrowserRouter>
+    <Greeting />
+    <section
+      className="goalsSection"
+    >
+      <Switch>
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/"
+        />
+        <Route
+          component={[Function]}
+          path="/routertest1"
+        />
+        <Route
+          component={[Function]}
+          path="/routertest2"
+        />
+        <Route
+          component={[Function]}
+          path="/gamelayout"
+        />
+      </Switch>
+    </section>
+  </BrowserRouter>
+</main>
 `;
