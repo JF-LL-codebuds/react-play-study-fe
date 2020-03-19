@@ -5,7 +5,7 @@ export default function Circle({ bgColor = 'white' }) {
 
   let circleStyle = {
     padding: 10,
-    marding: 20,
+    margin: 20,
     display: 'inline-block',
     backgroundColor: bgColor,
     borderRadius: '50%',

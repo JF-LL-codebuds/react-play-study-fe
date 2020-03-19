@@ -11,6 +11,7 @@ import Greeting from './greeting/Greeting';
 import GameLayout from './gamelayout/GameLayout';
 import goalStyles from './goals/goals.css';
 import styles from './app.css';
+import CirclesComp from './circle/circlesComp';
 
 export default function App() {
   /* eslint-disable-next-line no-console */
@@ -27,6 +28,7 @@ export default function App() {
           <>
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route path="/circles" component={CirclesComp} />
               <Route path="/routertest1" component={RouterTest1} />
               <Route path="/routertest2" component={RouterTest2} />
               <Route path="/gamelayout" component={GameLayout} />
