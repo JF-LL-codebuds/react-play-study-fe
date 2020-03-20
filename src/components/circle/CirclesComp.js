@@ -28,15 +28,17 @@ export default class CirclesComp extends Component {
       <Circle key={newList.length + 1}
         bgColor={colors.randomColor()} />
     );
-    console.log('addCircle fires');
     this.setState({
       circleList: newList
     });
-    console.log(newList);
   }
 
   // componentDidMount() {
-  //   this.populate();
+  //   let newColorList = this.state.colorList;
+  //   this.setState({
+  //     circleList: this.populate(newColorList)
+  //   });
+  //   console.log('newColorList', newColorList, '& CircleList', this.state.circleList);
   // }
   
   render() {
