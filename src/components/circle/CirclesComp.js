@@ -13,33 +13,35 @@ export default class CirclesComp extends Component {
   };
 
   populate = (colorList) => {
+    let circleList = [];
     colorList.forEach(color => {
-      let circleList = [];
       circleList.push( 
         <Circle key={colorList.indexOf(color)} bgColor={color} />
       );
-      return circleList;
     });
+    return circleList;
   }
 
   addCircle = () => {
     let newList = [...this.state.circleList];
+    newList.reverse();
     newList.push(
       <Circle key={newList.length + 1}
         bgColor={colors.randomColor()} />
     );
+    newList.reverse();
     this.setState({
       circleList: newList
     });
   }
 
-  // componentDidMount() {
-  //   let newColorList = this.state.colorList;
-  //   this.setState({
-  //     circleList: this.populate(newColorList)
-  //   });
-  //   console.log('newColorList', newColorList, '& CircleList', this.state.circleList);
-  // }
+  componentDidMount() {
+    let newColorList = this.state.colorList;
+    let newCircleList = this.populate(newColorList);
+    this.setState({
+      circleList: [...newCircleList]
+    });
+  }
   
   render() {
 
