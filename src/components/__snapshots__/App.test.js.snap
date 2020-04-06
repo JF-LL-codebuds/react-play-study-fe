@@ -24,6 +24,10 @@ exports[`App component renders App 1`] = `
         />
         <Route
           component={[Function]}
+          path="/circles"
+        />
+        <Route
+          component={[Function]}
           path="/routertest1"
         />
         <Route
